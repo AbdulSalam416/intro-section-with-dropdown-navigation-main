@@ -1,0 +1,281 @@
+    body {
+        background-color: hsl(0, 0%, 90%);
+        font-family: 'Outfit', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        cursor: pointer;
+    }
+    
+    nav li a:hover {
+        color: #000;
+    }
+    
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2rem 2rem 0;
+        height: 180px;
+    }
+    
+    .items-ul {
+        display: flex;
+        flex-direction: row;
+        flex: 4;
+        white-space: nowrap;
+        margin-block-end: 0;
+    }
+    
+    .navbar-brand {
+        padding-right: 1rem;
+        color: black;
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: 900;
+    }
+    /* DROPDOWN ITEMS */
+    
+    .dropdown-list {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        border-radius: 10px;
+        padding: 0.8rem;
+        flex-wrap: nowrap;
+        float: inline-end;
+    }
+    
+    .dropdown-list a {
+        font-size: 0.9rem;
+    }
+    
+    .drop-downLink {
+        /* white-space: nowrap; */
+        padding-bottom: 0.4rem;
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 15px;
+    }
+    
+    .dropdown-items ul {
+        padding-inline-start: 0%;
+    }
+    
+    .nav-items li {
+        list-style: none;
+        padding-right: 1rem;
+        width: 105px;
+    }
+    
+    .features,
+    .company {
+        display: none;
+    }
+    
+    .login {
+        position: relative;
+        margin-left: 50%;
+    }
+    
+    .loginRegister {
+        position: relative;
+        display: flex;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .loginRegister button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: 10px;
+        border: 1px solid hsl(0, 0%, 41%);
+        color: hsl(0, 0%, 41%);
+        background-color: #ffff;
+        padding-top: -5px;
+    }
+    
+    .loginRegister button:hover {
+        color: black;
+        border-color: #000;
+    }
+    
+    .menu-bar {
+        display: none;
+        padding-top: 1rem;
+    }
+    
+    .hidden-class {
+        display: none;
+    }
+    
+    .contents {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0 8rem;
+        height: 34.4rem;
+        flex: 1 1 0;
+        /* padding-left: 50px; */
+    }
+    
+    .contents h1 {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+    
+    .contents1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1.925rem;
+        flex: 1 1 0;
+    }
+    
+    .contents1 p {
+        font-size: 1.3rem;
+    }
+    
+    .contents2 {
+        display: flex;
+        padding-left: 3.125rem;
+        flex: 1 1 0;
+    }
+    
+    .contents2 img {
+        width: 100%;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    
+    .svg-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-self: flex-end;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    
+    .contents1 button {
+        width: 7.5rem;
+        height: 3.125rem;
+        border-radius: 10px;
+        color: #ffff;
+        background-color: #000;
+        cursor: pointer;
+    }
+    
+    .contents1 button:hover {
+        background-color: white;
+        color: #000;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        body {
+            background-color: lightblue;
+        }
+        .login {
+            position: relative;
+            margin-left: 90%;
+        }
+        .contents {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 2.5rem 0;
+            width: 200vh;
+            height: 100%;
+            flex-shrink: 0;
+        }
+        .contents1 {
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 0;
+            margin-top: 2rem;
+        }
+        .contents1 h1 {
+            display: inline;
+            font-size: 4.5rem;
+        }
+        .contents1 p {
+            font-size: 2.5rem;
+        }
+        .contents1 button {
+            width: 12rem;
+            height: 5rem;
+            border-radius: 15px;
+            font-size: 1.3rem;
+        }
+        .contents2 {
+            padding-top: 50px;
+            padding-left: 1rem;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1 0;
+            flex-wrap: wrap;
+        }
+        .contents2 img {
+            max-width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .attribution {
+            position: absolute;
+            font-size: 11px;
+            text-align: center;
+            margin-top: 4rem;
+            bottom: -90%;
+            margin-left: 60%;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        body {
+            background-color: lightgreen;
+        }
+        .nav-items {
+            width: 100vh;
+            height: 100%;
+        }
+        .items-ul {
+            display: none;
+        }
+        .login {
+            position: relative;
+            margin-left: 0;
+        }
+        .menu-bar {
+            position: absolute;
+            margin-left: 340%;
+            display: block;
+            padding-right: 30px;
+        }
+        .hidden-class {
+            display: block;
+            position: absolute;
+            height: 100vh;
+            background-color: #fff;
+            border: 1px solid;
+            margin-left: 300%;
+            margin-top: -10%;
+            width: 130%;
+            height: 270vh;
+        }
+        .hidden-class ul {
+            list-style-type: none;
+        }
+        .contents {
+            margin: 2.5rem 0;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
